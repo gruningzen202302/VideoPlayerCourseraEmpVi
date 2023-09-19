@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
         val mediaController = MediaController(this)
         mediaController.setAnchorView(videoView)
 
-//        val uri:Uri = parse(
-//            "android.resource://" + packageName + "/raw/tensor"
-//        )
-//        videoView.setMediaController(mediaController)
-//        videoView.setVideoURI(uri)
-//        videoView.requestFocus()
-//        videoView.start()
+        val uri:Uri = parse(
+            "android.resource://" + packageName + "/raw/tensor"
+        )
+        videoView.setMediaController(mediaController)
+        videoView.setVideoURI(uri)
+        videoView.requestFocus()
+        videoView.start()
     }
 }
